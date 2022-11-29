@@ -1,6 +1,7 @@
+Executable File  6 lines (6 sloc)  189 Bytes
 #!/usr/bin/python3
-"""Print the alphabet in reverse order alterning upper and lower case"""
-i = 0
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(c - i)), end="")
-    i = 32 if i == 0 else 0
+def remove_char_at(str, n):
+    """Create a copy of the string without the character at position n"""
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:])
